@@ -1,19 +1,30 @@
-<h1>Grusskarte</h1>
+<h2>Digital Interaktiv Fantastisches</h2>
+<h1>
+  <%= image_tag "ribbon.png", class: "ribbon" %>
+  Geburtstags-Quiz für Claudia
+  <%= image_tag "ribbon.png", class: "ribbon" %>
+</h1>
 
 
 <section class="container">
   <div class="postcard">
     <figure class="front">
       <div class="photo">
-        <%= image_tag "foto_tobi.JPG", class: "image_kids", title: "Bild von Tobias" %>
+        <%= image_tag "foto_tobi2.JPG", class: "image_kids", title: "Bild von Tobias" %>
       </div>
 
       <form id="form_tobi">
-        <p>In welcher Stadt wohnt Tobi Tobson?</p>
+        <p class="query">In welcher Stadt wohnt Tobi?</p>
         <fieldset>
-          <input type="radio" id="answer1" name="frage_tobi" value="wrong"><label for="answer1">Bamberg</label><br>
-          <input type="radio" id="answer2" name="frage_tobi" value="wrong"><label for="answer2">Freiburg</label><br>
-          <input type="radio" id="answer3" name="frage_tobi" value="right"><label for="answer3">Hamburg</label><br>
+          <div>
+            <input type="radio" id="answer1" name="frage_tobi" value="wrong"><label for="answer1">☐ Bamberg</label>
+          </div>
+          <div>
+            <input type="radio" id="answer2" name="frage_tobi" value="wrong"><label for="answer2">☐ Freiburg</label>
+          </div>
+          <div>
+            <input type="radio" id="answer3" name="frage_tobi" value="right"><label for="answer3">☐ Hamburg</label>
+          </div>
         </fieldset>
       </form>
     </figure>
@@ -29,21 +40,44 @@
   <div class="postcard">
     <figure class="front">
       <div class="photo">
-        <%= image_tag "IMG_8144.JPG", class: "image_kids", title: "Bild von Tobias" %>
+        <%= image_tag "IMG_8144.JPG", class: "image_kids", title: "Bild von Jo" %>
       </div>
 
-      <form id="form_tobi">
-        <p>In welcher Stadt wohnt Tobi Tobson?</p>
+      <form>
+        <p class="query">Was war Jo's Lieblingsessen als Kind?</p>
         <fieldset>
-          <input type="radio" id="answer1" name="frage_tobi" value="wrong"><label for="answer1">Bamberg</label><br>
-          <input type="radio" id="answer2" name="frage_tobi" value="right"><label for="answer2">Freiburg</label><br>
-          <input type="radio" id="answer3" name="frage_tobi" value="wrong"><label for="answer3">Hamburg</label><br>
+          <div>
+            <input type="radio" id="jo_answer1" name="frage_jo" value="wrong"><label for="jo_answer1">☐ Frankfurter Schnitzel mit grüner Soße</label><br>
+          </div>
+          <div>
+            <input type="radio" id="jo_answer2" name="frage_jo" value="right"><label for="jo_answer2">☐ Grießbrei mit Kirschen und Zimt und Zucker</label><br>
+          </div>
+          <div>
+            <input type="radio" id="jo_answer3" name="frage_jo" value="wrong"><label for="jo_answer3">☐ Chicken McNuggets mit Pommes und Majo</label><br>
+          </div>
         </fieldset>
       </form>
     </figure>
 
     <figure class="back">
-      <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+      <p>Liebe Claudia,</p>
+
+<p>
+Heute kann es regnen,<br>
+stürmen oder schneien,<br>
+denn du strahlst ja selber<br>
+wie der Sonnenschein.<br>
+Heut ist dein Geburtstag,<br>
+darum feiern wir,<br>
+alle deine Freunde<br>
+freuen sich mit dir<br>
+</p>
+
+<p>Zu deinem Ehrentag wünsche Ich Dir Gelassenheit und die Weisheit, dass man für Kinderlieder nie zu alt wird. Auf weitere glückliche, kindliche und weise 50 Jahre.<br>
+</p><p>
+Deine Jo</p>
+
+
     </figure>
   </div>
 </section>
@@ -56,11 +90,17 @@
         <%= image_tag "IMG_8456.JPG", class: "image_kids", title: "Bild von Tobias" %>
       </div>
       <form id="form_tobi">
-        <p>In welcher Stadt wohnt Tobi Tobson?</p>
+        <p class="query">In welcher Stadt wohnt Tobi Tobson?</p>
         <fieldset>
-          <input type="radio" id="answer1" name="frage_tobi" value="wrong"><label for="answer1">Bamberg</label><br>
-          <input type="radio" id="answer2" name="frage_tobi" value="wrong"><label for="answer2">Freiburg</label><br>
-          <input type="radio" id="answer3" name="frage_tobi" value="right"><label for="answer3">Hamburg</label><br>
+          <div>
+            <input type="radio" id="answer1" name="frage_tobi" value="wrong"><label for="answer1">☐ Bamberg</label>
+          </div>
+          <div>
+            <input type="radio" id="answer2" name="frage_tobi" value="wrong"><label for="answer2">☐ Freiburg</label>
+          </div>
+          <div>
+            <input type="radio" id="answer3" name="frage_tobi" value="right"><label for="answer3">☐ Hamburg</label>
+          </div>
         </fieldset>
       </form>
     </figure>
@@ -78,11 +118,17 @@
         <%= image_tag "landscape.jpg", class: "image_kids", title: "Bild von Tobias" %>
       </div>
       <form id="form_tobi">
-        <p>In welcher Stadt wohnt Tobi Tobson?</p>
+        <p class="query">In welcher Stadt wohnt Tobi Tobson?</p>
         <fieldset>
-          <input type="radio" id="answer1" name="frage_tobi" value="wrong"><label for="answer1">Bamberg</label><br>
-          <input type="radio" id="answer2" name="frage_tobi" value="wrong"><label for="answer2">Freiburg</label><br>
-          <input type="radio" id="answer3" name="frage_tobi" value="right"><label for="answer3">Hamburg</label><br>
+          <div>
+            <input type="radio" id="answer1" name="frage_tobi" value="wrong"><label for="answer1">☐ Bamberg</label>
+          </div>
+          <div>
+            <input type="radio" id="answer2" name="frage_tobi" value="wrong"><label for="answer2">☐ Freiburg</label>
+          </div>
+          <div>
+            <input type="radio" id="answer3" name="frage_tobi" value="right"><label for="answer3">☐ Hamburg</label>
+          </div>
         </fieldset>
       </form>
     </figure>
